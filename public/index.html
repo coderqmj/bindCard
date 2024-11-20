@@ -9,11 +9,9 @@
       name="description"
       content="Web site created using create-react-app"
     />
+    <!-- <meta http-equiv="content-security-policy"
+    content="default-src 'self'; script-src 'self';img-src 'self' data:;style-src 'self' 'unsafe-inline';media-src 'self'" /> -->
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
@@ -39,5 +37,12 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+  <script src="https://cdn.checkout.com/js/framesv2.min.js"></script>
+  <script id="risk-js" src="https://risk.sandbox.checkout.com/cdn/risk/1.2/risk.js"></script>
+  <script src="https://pay.google.com/gp/p/js/pay.js" ></script>
+  <script type="text/javascript" src="https://js.pay.com/v1"></script>
+  <script crossorigin
+        src="https://applepay.cdn-apple.com/jsapi/1.latest/apple-pay-sdk.js"
+        ></script>
   </body>
 </html>

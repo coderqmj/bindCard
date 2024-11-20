@@ -1,25 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Layout } from "tea-component";
+import RoutesRegister from "./app.routes";
+import React from "react";
+import { MantineProvider } from "@mantine/core";
+
+const { Body, Content } = Layout;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MantineProvider>
+      <Layout className="demo-layout">
+        <Body>
+          <Content>
+            <Content.Header title="卡买币"></Content.Header>
+            <Content.Body>
+              <RoutesRegister />
+            </Content.Body>
+          </Content>
+        </Body>
+      </Layout>
+    </MantineProvider>
   );
 }
 
